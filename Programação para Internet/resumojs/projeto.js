@@ -92,7 +92,4 @@ console.log('São '+times.length+' times')
 for (var contadortime = 0; contadortime < times.length; contadortime++){
     console.log(times[contadortime])
 }
-/*
-Na aula gravada paramos em 1:12:43
-para retornarmos amanhã
-*/
+
