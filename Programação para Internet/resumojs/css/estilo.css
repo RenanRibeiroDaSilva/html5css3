@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body{
+    background: #f3feb0;
+    font-family: 'Patrick Hand', 'Arial', 'Times New Roman';
+}
+
+fieldset{
+    width:60%;
+    border: solid #812f33 2px;
+}
+
+legend{
+    font-size: 150%;
+}
+
+label{
+    font-size: 20px;
+    display: block; /*Cada elemento em uma linha - sem precisar do <br> */
+}
+
+.botao{
+    float: right;
+    width: auto; /*A lagura é automaticamente definida pelo texto*/
+    font-family: 'Patrick Hand', 'Arial', 'Times New Roman';
+}

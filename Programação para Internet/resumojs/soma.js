@@ -19,12 +19,21 @@ function soma(num1, num2){
     return (parseFloat(num1) + parseFloat(num2)).toFixed(2)
 }
 
-// console.log(parseFloat('teste'))  NaN = Not a Number
-console.log(soma('10', '20'))
-console.log(soma(10, '20'))
-console.log(soma('10', 20))
-console.log(soma(10, 20))
-console.log(soma('oi', '20'))
-/*
-Paramos em 2:00:18 tempo da aula para retornarmos mais tarde
-*/
+//console.log(parseFloat('teste'))  NaN = Not a Number
+//console.log(soma('10', '20'))
+//console.log(soma(10, '20'))
+//console.log(soma('10', 20))
+//console.log(soma(10, 20))
+//console.log(soma('oi', '20'))
+
+function calcular(){
+    var numero1 = document.calc.valor1.value
+    var numero2 = document.calc.valor2.value
+    if(numero1.lenght > 0 && numero2.lenght > 0 ){ 
+        var resulta = soma(numero1, numero2)
+        document.calc.resultado.value = resulta
+    }else{
+        alert('É necessario informar dois números!')
+    }
+}
+ // paramos no tempo de 2:50:41 no video da aula passada!
