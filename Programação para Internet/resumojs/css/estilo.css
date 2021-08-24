@@ -6,7 +6,7 @@ body{
 }
 
 fieldset{
-    width:60%;
+    width: 25px;%;
     border: solid #812f33 2px;
 }
 
@@ -23,4 +23,15 @@ label{
     float: right;
     width: auto; /*A lagura é automaticamente definida pelo texto*/
     font-family: 'Patrick Hand', 'Arial', 'Times New Roman';
+}
+
+.limpar{
+    background-color: #812f33;
+    border: none; /*Remove a borada padrão*/
+    color: #FFFFFF;
+    font-size: 9px;
+    text-align: center;
+    margin-top: 16px;
+    padding: 4px;
+    font-family: inherit; /*herda do principal*/
 }

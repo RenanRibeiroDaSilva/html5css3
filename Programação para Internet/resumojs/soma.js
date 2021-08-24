@@ -36,4 +36,9 @@ function calcular(){
         alert('É necessario informar dois números!')
     }
 }
- // paramos no tempo de 2:50:41 no video da aula passada!
+ 
+function limpar(){
+    document.calc.valor1.value = ''
+    document.calc.valor2.value = ''
+    document.calc.resultado.value = ''
+}
