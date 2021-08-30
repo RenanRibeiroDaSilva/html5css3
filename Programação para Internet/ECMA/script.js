@@ -52,10 +52,57 @@ const estacionamento2 = {...estacionamento, CNPJ: '12.345.678/0001-32'}
 console.log(estacionamento2)
 
 // Arrow functions
+// Início
 const matriz = [2, 4, 6, 8, 10]
 const novaMatriz = matriz.map(function(item){
     return item * 3
 })
 console.log(novaMatriz)
 
-// Parei no tempo 34:54 do video Aula 04 - PI - EcmaScript.mp4
+// Remover o texto function e tranformar em =>
+const matriz2 = [2, 4, 6, 8, 10]
+const novaMatriz2 = matriz.map((item) => {
+    return item * 4
+})
+console.log(novaMatriz2)
+
+// Quando temos apenas um parâmetro, podemos remover o ()
+const matriz3 = [2, 4, 6, 8, 10]
+const novaMatriz3 = matriz.map(item => {
+    return item * 5
+})
+console.log(novaMatriz3)
+
+// Quando o return é apenas em uma linha
+const matriz4 = [2, 4, 6, 8, 10]
+const novaMatriz4 = matriz4.map(item => item * 10)
+console.log(novaMatriz4)
+
+// Promises (promessas)
+var promiseGithub = function(urlGithub){
+    return new Promise(function(resolve, reject){
+        var xhr = new XMLHttpRequest()
+        xhr.open("GET", urlGithub)
+        xhr.send(null)
+
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState === 4){
+                if(xhr.status === 200){
+                    resolve(JSON.parse(xhr.responseText))
+                }else{
+                    reject('Erro na requisição!')
+                }
+            }
+        }
+    })
+}
+
+promiseGithub('https://api.github.com/users/renanribeirodasilva')
+.then(function(response){
+    console.log(response)
+}).catch(function(error){
+    console.error(error)
+})
+
+// Async / Await
+// Parei no tempo 54:03 no video da aula 04 ecmaScript
