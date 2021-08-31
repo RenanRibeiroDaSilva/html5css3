@@ -105,4 +105,34 @@ promiseGithub('https://api.github.com/users/renanribeirodasilva')
 })
 
 // Async / Await
-// Parei no tempo 54:03 no video da aula 04 ecmaScript
+const minhaPromise = (texto) => new Promise ((resolve, reject) =>{
+    setTimeout(() => {resolve(texto)}, 2000)
+})
+
+async function executaAlgo(){
+    console.log(await minhaPromise('Início'))
+    console.log(await minhaPromise('Meio'))
+    console.log(await minhaPromise('Fim'))
+}
+
+executaAlgo()
+
+// Fetch --> CEP
+let cep = '13309440'
+let url = `https://viacep.com.br/ws/${cep}/json`
+fetch(url)
+.then(response => response.json())
+.then(result => console.log(result))
+.catch(err => {
+    console.error('Falha ao obter os dados', err)
+})
+
+// Fetch --> GIT
+let user = 'renanribeirodasilva'
+let url_git = `https://api.github.com/users/${user}`
+fetch(url_git)
+.then(response => response.json())
+.then(result => console.log(result))
+.catch(err => {
+    console.error('Falha ao obter os dados', err)
+})
