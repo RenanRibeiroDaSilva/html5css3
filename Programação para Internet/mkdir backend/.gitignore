@@ -1,3 +1,0 @@
-# Arquivos ou pastas que serão ignoradas pelo GIT
-node_modules/
-.env
