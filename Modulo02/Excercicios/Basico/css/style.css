@@ -1,0 +1,18 @@
+
+
+/* Fundo do site: */
+body {
+    background-image: url(../img/lobos_background.webp);
+    background-size: cover;         /* Cobre toda a tela */
+    background-repeat: no-repeat;   /* Não Repete a Imagem */
+    background-position: center;    /* Centraliza a Imagem */
+    height: 100vh;                  /* Ocupa 100% da altura da tela */
+    margin: 0 ;
+    color: #ffffff;               /* Cor do texto */
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+h1, p {
+    text-align: center;
+    padding-top: 20px;
+}
