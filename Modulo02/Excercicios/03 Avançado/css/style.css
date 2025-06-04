@@ -1,0 +1,49 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Layout Flex */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.conteudo {
+    flex: 1 1 300px;
+    max-width: 600px;
+}
+
+.imagem img {
+    max-width: 100%;
+    border-radius: 10%;
+}
+
+/* Rodapé */
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
