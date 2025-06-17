@@ -10,7 +10,7 @@ header {
     background-color: rgba(248, 38, 255, 0.866);
     text-align: center;
     padding-top: 5px;
-    margin-bottom: 0%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.491);
 }   
 
 header > h1 {
@@ -22,7 +22,9 @@ header > h1 {
 nav {
     background-color: rgba(146, 72, 215, 0.78);
     padding: 3px;
-    margin: 0%;
+    margin: 0px 25% 0px 25%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.466);
+    border-radius: 5px;
 }
 
 nav > a {
@@ -44,15 +46,20 @@ main {
     height: auto;
     width: auto;
     padding: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.51);
+    border-radius: 5px;
 }
 
 article {
     background-color: lightgrey;
     padding: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.51);
+    border-radius: 5px;
 }
 
 article > aside {
     background-color: rgb(193, 193, 193);
+    border-radius: 5px;
 }
 
 footer {
