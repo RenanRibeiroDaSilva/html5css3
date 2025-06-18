@@ -6,10 +6,16 @@
     <title>Borda Personalizada</title>
     <style>
         h1 {
-            border: 10px solid black;
+            border: 10px solid transparent;
             padding: 10px;
 
             border-image-source: url('borda.png');
+            border-image-slice: 28;
+            border-image-repeat: repeat;
+
+            /* Shorthands:
+            boder-image: url('borda.png') 28 repeat;
+            */
         }
     </style>
 </head>
