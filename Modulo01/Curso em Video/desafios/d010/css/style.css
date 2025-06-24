@@ -1,6 +1,20 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400..900&display=swap');
+
+:root {
+    --cor1: #f9e7d8;
+    --cor2: #fcd3af;
+    --cor3: #ffc089;
+    --cor4: #fe9f4b;
+    --cor5: #e37719;
+    --cor6: #3a1d04;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Bebas Neue", sans-serif;
+}
+
 body {
-    background-image: linear-gradient(225deg, #fcd3af, #ffc089, #fe9f4b);
+    background-image: linear-gradient(225deg, var(--cor2), var(--cor3), var(--cor4));
     background-attachment: fixed;
 }
