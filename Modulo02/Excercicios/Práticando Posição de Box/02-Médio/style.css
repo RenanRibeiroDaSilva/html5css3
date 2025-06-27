@@ -1,0 +1,77 @@
+
+
+body {
+    background-color: gray;
+    margin: 0;
+}
+
+/* Como eu fiz:
+
+main {
+    background-color: aliceblue;
+    height: 600px;
+    width: 600px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.box1 {
+    background-color: blue;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 25%;
+}
+
+.box2 {
+    background-color: green;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+
+.box3 {
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+*/
+
+/* Como o GPT fez */
+
+main {
+    background-color: aliceblue;
+    height: 600px;
+    width: 600px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 50px;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+}
+
+.box1 {
+    background-color: blue;
+}
+
+.box2 {
+    background-color: green;
+    margin-left: 150px;
+}
+
+.box3 {
+    background-color: red;
+    margin-left: 300px;
+}
