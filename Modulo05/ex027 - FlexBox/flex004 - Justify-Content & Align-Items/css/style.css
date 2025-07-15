@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.container {
+    background-color: lightsalmon;
+    height: 300px; /* Para entender o Align-Itens */
+    display: flex;
+    flex-flow: row nowrap;
+
+    /* Estudando Justify-Content */
+    /* justify-content: flex-start; -> Posiciona os filhos no incio do Conatianer */
+    /* justify-content: flex-end; -> Posiciona os filhos no final do Container. Respeitando o eixo do Pai */
+    /* justify-content: center; -> Posiciona os filhos no centro do Container. */
+    /* justify-content: space-between; -> Posiciona os filhos em todo o Container com espaços iguais entre eles. O primeiro item no começo e o ultimo item no final */
+    /* justify-content: space-evenly; -> Posiciona os filhos com em todo o Container com espaços iguais entre eles. Com espaço antes do primeiro item e depois do ultimo item */
+    justify-content: space-around; /* -> Posiciona os filhos com espaço ante a depois de cada item. */
+
+    /* Estudando Align-Items */
+    /* align-items: stretch; -> Posiciona os filhos para preencher toda a altura do container. Vem por padrão. */
+    /* align-items: flex-start; -> Posiciona os filhos no topo do container, eixo transversal superior. */
+    /* align-items: flex-end; -> Posiciona os filhos na parte inferior do container, eixo transversal inferior. */
+    align-items: center; /* -> Posiciona os filhos no meio do container, sobre o eixo tranversal */
+}
+
+.item {
+    background-color: lightblue;
+    border: 1px solid black;
+  
+    text-align: center;
+}
