@@ -4,12 +4,13 @@
     background-color: lightsalmon;
 
     display: flex;
+    flex-direction: row;
 }
 
 .item {
     background-color: lightblue;
     border: 1px solid black;
-    flex: row;
+    flex: auto;
     text-align: center;
     padding: 10px;
 }

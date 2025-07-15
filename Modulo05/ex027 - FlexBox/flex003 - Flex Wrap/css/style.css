@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.container {
+    background-color: lightsalmon;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* --> Padrão. Não quebra linha. Vai até o limite do conteudo interno do filho */
+    /* flex-wrap: wrap;  --> Permite a quebra de linha, jogando o filho para baixo */
+    /* flex-wrap: wrap-reverse; --> Permite a quebra de linha, jogando o filho para cima */
+    /* flex-flow: row nowrap; --> Short hand de flex-direction flex-wrap (nessa ordem) */
+}
+
+.item {
+    background-color: lightblue;
+    border: 1px solid black;
+    flex: auto;
+    text-align: center;
+}
