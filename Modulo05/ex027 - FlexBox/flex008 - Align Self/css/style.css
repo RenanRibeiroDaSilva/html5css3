@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+.container {
+    background-color: lightsalmon;
+    height: 400px;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+
+.item {
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+#i1 {
+    align-self: auto;
+}
+
+#i2 {
+    align-self: flex-start;
+}
+
+#i3 {
+    align-self: flex-end;
+}
+
+#i4 {
+    align-self: auto;
+}
+
+#i5 {
+    align-self: auto;
+}
+
+#i6 {
+    align-self: center;
+}
+
+#i7 {
+    align-self: auto;
+}
+
+#i8 {
+    align-self: auto;
+}
+
+#i9 {
+    align-self: stretch;
+}
+
+#i10 {
+    align-self: baseline;
+}
+
+/*
+  A propriedade `align-self` permite sobrescrever o alinhamento de um item específico 
+  dentro de um container com display `flex` ou `grid`, substituindo o valor de `align-items`.
+
+  Ela aceita os seguintes valores:
+
+  - auto      → Usa o valor definido no `align-items` do container pai.
+  - flex-start → Alinha o item ao início do eixo transversal (cross-axis).
+  - flex-end   → Alinha o item ao final do eixo transversal.
+  - center     → Centraliza o item no eixo transversal.
+  - baseline   → Alinha o item de acordo com a linha de base da tipografia.
+  - stretch    → Estica o item para preencher totalmente o espaço disponível (padrão).
+
+  Exemplo de uso:
+  .item {
+    align-self: center;
+  }
+
+  Isso fará com que apenas esse item seja centralizado no eixo cruzado, 
+  independentemente do alinhamento dos demais itens no container.
+*/

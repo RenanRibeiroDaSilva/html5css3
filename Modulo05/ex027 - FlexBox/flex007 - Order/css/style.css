@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.container {
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.item {
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+#i1 {
+    order: -3;
+}
+
+#i2 {
+    order: 5;
+}
+
+#i3 {
+    order: 9;
+}
+
+#i4 {
+    order: 1;
+}
+
+#i5 {
+    order: 0;
+}
+
+#i6 {
+    order: 6;
+}
+
+#i7 {
+    order: -9;
+}
+
+#i8 {
+    order: 0;
+}
+
+#i9 {
+    order: 3;
+}
+
+#i10 {
+    order: 1;
+}
