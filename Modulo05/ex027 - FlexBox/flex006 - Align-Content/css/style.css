@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.container {
+    background-color: lightsalmon;
+    height: 400px;
+
+    display: flex;
+    flex-flow: row wrap;
+
+    /* Valores de Align-Content */
+    /* align-content: stretch; -> Estica os filhos para preencher o tamanho do pai. Por padrão. */
+    /* align-content: flex-start; -> Alinha os filhos pelo começo do container.  */
+    /* align-content: flex-end; -> Alinha os filhos pelo final do container. */
+    /* align-content: space-around; -> Alinha os filhos com espaço entre as linhas */
+    /* align-content: space-evenly; -> Alinha os filhos com espaço antes e depois entre as linhas */
+    /* align-content: space-between;  Alinha os filhos com o espaço no meio das linhas */
+    align-content: center; /* Alina os filhos no meio do container. No eixo transversal */
+}
+
+.item {
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    padding: 40px;
+}
