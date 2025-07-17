@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+.container {
+    background-color: lightsalmon;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.item1 {
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    /* flex-basis: 250px;
+       flex-shrink: 1;
+       flex-grow: 0; */
+    flex: 0 1 250px;
+}
+
+.item2 {
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    /* flex-basis: 250px;
+       flex-shrink: 0;
+       flex-grow: 3; */
+    flex: 3 0 250px;
+}
+
+.item3 {
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    /* flex-basis: 250px;
+       flex-shrink: 2;
+       flex-grow: .5; */
+    flex: .5 2 250px   
+}
+
+/*
+  ► FLEX-GROW
+
+  A propriedade `flex-grow` define quanto um item pode crescer em relação aos outros,
+  para ocupar o espaço disponível no container flexível.
+
+  ► Sintaxe:
+    flex-grow: <número>;
+
+  ► Valores:
+    - 0 (padrão): o item não cresce mesmo se houver espaço disponível.
+    - 1 ou mais: o item cresce proporcionalmente ao número definido, em relação aos outros itens.
+
+  ► Exemplo:
+  .item1 {
+    flex-grow: 1;
+  }
+  .item2 {
+    flex-grow: 2;
+  }
+
+  Se sobrar espaço, o `.item2` ocupará o dobro do espaço extra comparado ao `.item1`.
+
+  ---------------------------------------------------------------------
+
+  ► FLEX-SHRINK
+
+  A propriedade `flex-shrink` define quanto um item pode encolher quando o espaço no container é insuficiente.
+
+  ► Sintaxe:
+    flex-shrink: <número>;
+
+  ► Valores:
+    - 0: o item não encolhe, mesmo se faltar espaço (pode causar overflow).
+    - 1 ou mais: o item encolhe proporcionalmente ao número definido, em relação aos outros itens.
+
+  ► Exemplo:
+  .item1 {
+    flex-shrink: 1;
+  }
+  .item2 {
+    flex-shrink: 3;
+  }
+
+  Se faltar espaço, o `.item2` encolherá 3 vezes mais que o `.item1`.
+  
+  ---------------------------------------------------------------------
+
+  ► DICA FINAL:
+  Você pode usar essas propriedades separadamente ou juntas com `flex`:
+  .item {
+    flex: 1 1 200px; /* grow, shrink, basis */
