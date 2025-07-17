@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.container {
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.item {
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    flex-basis: 150px;
+}
+
+
+/*
+  A propriedade `flex-basis` define o tamanho inicial **preferencial** de um item flexível
+  antes da distribuição do espaço restante no container flex (ou seja, antes do cálculo
+  automático do tamanho pelo flexbox).
+
+  Pode ser usada com qualquer unidade de medida CSS (px, %, em, etc.) ou com as palavras-chave:
+
+  ► Valores aceitos:
+    - auto      → Usa o tamanho do conteúdo, ou o valor definido via `width`/`height` (dependendo do eixo).
+    - 0         → Ignora o conteúdo e inicia com zero, permitindo que o espaço seja distribuído com base no `flex-grow`.
+    - <tamanho> → Valor fixo inicial (ex: 200px, 30%, 10em).
+
+  ► Como usar:
+  .item {
+    flex-basis: 150px;
+  }
+
+  Isso define que o tamanho inicial do item deve ser 150px, antes da aplicação de `flex-grow` ou `flex-shrink`.
+
+  ► Dica:
+  Quando você usa a shorthand `flex`, o primeiro valor corresponde ao `flex-grow`,
+  o segundo ao `flex-shrink` e o terceiro ao `flex-basis`. Exemplo:
+
+  .item {
+    flex: 1 1 200px; /* flex-grow: 1; flex-shrink: 1; flex-basis: 200px */
