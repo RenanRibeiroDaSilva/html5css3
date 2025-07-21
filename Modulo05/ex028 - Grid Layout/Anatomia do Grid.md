@@ -63,7 +63,3 @@ O CSS Grid Layout é uma técnica poderosa de layout bidimensional que permite a
     grid-row: 1 / 2;    /* ocupa apenas uma linha */
   }
   ```
-
----
-
-Esses são os conceitos fundamentais que você viu nessa primeira aula. Conforme avançar, poderá explorar recursos como `grid-area`, `grid-gap`, `template-areas` e `auto-placement`.
